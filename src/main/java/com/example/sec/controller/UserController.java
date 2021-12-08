@@ -15,8 +15,13 @@ public class UserController {
         return "public users";
     }
 
+    @GetMapping("/private/admin")
+    public String admin() {
+        return "admin config";
+    }
+
     @GetMapping("/private/users")
     public String privateUsers() {
-        return "private users";
+        return "users list";
     }
 }
