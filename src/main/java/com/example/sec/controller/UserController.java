@@ -20,6 +20,11 @@ public class UserController {
         return "admin config";
     }
 
+    @GetMapping("/private/admin/update")
+    public String adminUpdate() {
+        return "admin config";
+    }
+
     @GetMapping("/private/users")
     public String privateUsers() {
         return "users list";
